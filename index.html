@@ -1,16 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script src="/script/script.js"></script>
-    <link rel="stylesheet" href="/style/style.css">
-    
-    <title>Company Profile</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script/script.js"></script>
+    <title>Personal Portofolio</title>
 </head>
 <body>
-    
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-content">
+            <img src="profile.jpeg" alt="logo" class="profile-image"/>
+            <h1 class="header-title">Aditya Ammar Al Haqqi</h1>
+        </div>
+        <div class="nav-wrapper">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#about">About Me</a></li>
+                <li class="nav-item"><a href="#my-projects">My Projects</a></li>
+                <li class="nav-item"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <article class="section" id="about">
+        <h1 class="section-title">About Me</h1>
+        <p class="about-text">
+            I am Aditya Ammar Al Haqqi, an Informatics student at Universitas Amikom Yogyakarta with a strong interest in programming and web development. 
+            I am passionate about building responsive, efficient, and user-friendly web applications.
+            I have experience developing web-based projects using modern frameworks and technologies, and I continuously improve my technical and problem-solving skills through hands-on projects. 
+            I am eager to contribute and grow as a Web Developer, particularly in frontend and backend development.
+        </p>
+    </article>
+
+    <!-- My Projects Section -->
+    <article class="section" id="my-projects">
+        <h1 class="section-title-right">My Projects</h1>
+        
+    </article>
+
+    <!-- Contact Section -->
+    <article class="section" id="contact">
+        <h1 class="section-title">Get In Touch</h1>
+        <form action="#" class="contact-form">
+            <div class="form-row">
+                <label>Name</label>
+                <input type="text" placeholder="Name" class="form-input">
+            </div>
+
+            <div class="form-row-date">
+                <label>Date</label>
+                <input type="date" placeholder="Date" class="form-input">
+            </div>
+            
+            <div class="form-row-gender">
+                <label>Gender</label>
+                <div class="radio-group">
+                    <input type="radio" value="male" id="male" name="gender">
+                    <label for="male" class="radio-label">Male</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" value="female" id="female" name="gender">
+                    <label for="female" class="radio-label">Female</label>
+                </div>
+            </div>
+
+            <div class="form-col">
+                <label>Message</label>
+                <textarea rows="4" placeholder="Your message..." class="form-textarea"></textarea>
+            </div>
+
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </article>
+
+    <div class="back-to-top">
+        <a href="#" class="back-link">Back to top</a>
+        <svg xmlns="http://www.w3.org/2000/svg" 
+            width="24" 
+            height="24" 
+            viewBox="0 0 24 24" 
+            fill="none" 
+            stroke="currentColor" 
+            stroke-width="2" 
+            stroke-linecap="round" 
+            stroke-linejoin="round" 
+            class="chevron-icon">
+                <path d="m18 15-6-6-6 6"/>
+        </svg>
+    </div>
 </body>
 </html>
