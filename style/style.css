@@ -155,6 +155,10 @@ body {
     font-weight: 500;
 }
 
+#my-projects {
+    background-color: #a5b9df;
+}
+
 .project-link {
     display: inline-block;
     color: #3b82f6;
@@ -173,6 +177,7 @@ body {
     gap: 0.5rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+    flex: 1;
 }
 
 .form-row {
@@ -218,10 +223,11 @@ body {
 .radio-group {
     display: flex;
     align-items: center;
+    gap: 0.5rem;
 }
 
-.radio-label {
-    margin-left: 0.5rem;
+.radio-group label {
+    margin: 0;
 }
 
 .submit-button {
@@ -239,13 +245,31 @@ body {
     background-color: #1d4ed8;
 }
 
-.back-to-top {
+.back-to-top,
+.see-all-projects {
     display: flex;
     gap: 0.5rem;
     align-items: center;
     justify-content: center;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
+}
+
+.see-all-projects,
+.see-all-projects a {
+    color: white;
+    background-color: #a5b9df;
+}
+
+.see-all-link {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-color 300ms;
+}
+
+.see-all-link:hover {
+    border-bottom-color: #fff;
 }
 
 .back-link {
@@ -260,6 +284,43 @@ body {
 }
 
 .chevron-icon {
+    display: block;
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: flex-start;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.result-box {
+    min-width: 260px;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1),
+                0 2px 4px -1px rgba(0,0,0,0.06);
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+
+.result-box h3 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    font-size: 1.125rem;
+    color: #1f2937;
+}
+
+.result-box p {
+    width: fit-content;
+    margin: 0.25rem 0;
+    color: #374151;
+}
+
+svg {
     display: block;
 }
 
@@ -319,6 +380,7 @@ body {
     }
 
     .contact-form {
+        width: 100%;
         padding-left: 0.5rem;
         padding-right: 0.5rem;
     }
@@ -337,11 +399,22 @@ body {
 
     .form-input,
     .form-textarea {
-        width: 100%;
+        width: 95%;
     }
 
     .submit-button {
         width: 100%;
+    }
+
+    .contact-wrapper {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .result-box {
+        width: 95%;
     }
 }
 
